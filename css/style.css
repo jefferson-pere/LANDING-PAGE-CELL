@@ -1,0 +1,135 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(90deg, #3812c0, #dc5ed5);
+
+  & section img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+.boxMenu {
+  align-items: center;
+  height: 15rem;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.menuLateral svg {
+  height: 30px;
+  width: 30px;
+  fill: white;
+
+}
+.yourLogo a{
+  font-size: 2.6rem;
+  color: white;
+  padding: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+nav a {
+  color: white;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-shadow: 1px 1px 1px #0002;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+nav a:hover {
+  background: #fff2;
+}
+.login button {
+  color: white;
+  background: #3a14c2;
+  font-size: 1.6rem;
+  padding: 0.6rem 3rem;
+  border: none;
+  text-shadow: 1px 1px 1px #0004;
+  box-shadow: 1px 1px 2px #0002;
+  transition: filter 200ms, scale 200ms;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.05);
+    scale: 1.01;
+  }
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.slogan {
+  margin-left: 7rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1.6rem;
+
+  & h1 {
+    font-size: 4.6rem;
+    text-shadow: 1px 2px 2px #0002;
+
+    & .destaque {
+      font-size: 9.2rem;
+    }
+  }
+  & p {
+    max-width: 48rem;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #0002;
+  }
+}
+main button {
+  background: white;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  padding: 1rem 3.4rem;
+  border: none;
+  text-shadow: 1px 1px 1px #0004;
+  box-shadow: 1px 1px 2px #0002;
+  transition: filter 200ms, scale 200ms;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.05);
+    scale: 1.01;
+  }
+}
+.search-container {
+  display: inline-block;
+}
+.search-input {
+  background: none;
+  width: 0;
+  padding: 1rem;
+  padding-right: 2rem; /* Espaço para a lupa */
+  transition: width 0.3s; /* Animação de expansão */
+  border: none;
+}
+.search-icon {
+  cursor: pointer; /* Muda o cursor ao passar sobre a lupa */
+  fill: #1a1459;
+  font-size: 2rem;
+}
+.search-input.active {
+  width: 15rem; /* Largura expandida */
+}
